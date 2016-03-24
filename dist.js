@@ -60,7 +60,7 @@
 	  var max = arguments.length <= 0 || arguments[0] === undefined ? 255 : arguments[0];
 	  var min = arguments.length <= 1 || arguments[1] === undefined ? 0 : arguments[1];
 
-	  return 'rgb(' + random(max, min) + ', ' + random(max, min) + ', ' + random(max, min) + ')';
+	  return 'rgb(' + getRandom(max, min) + ',' + getRandom(max, min) + ',' + getRandom(max, min) + ')';
 	};
 
 	exports.default = getColor;
