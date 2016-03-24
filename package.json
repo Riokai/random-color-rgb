@@ -1,0 +1,29 @@
+{
+  "name": "random-color-rgb",
+  "version": "0.0.1",
+  "description": "generate random RGB colors",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --progress --colors --watch",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Riokai/random-color-rgb.git"
+  },
+  "keywords": [
+    "rgb",
+    "random"
+  ],
+  "author": "Kai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Riokai/random-color-rgb/issues"
+  },
+  "homepage": "https://github.com/Riokai/random-color-rgb#readme",
+  "devDependencies": {
+    "babel-core": "^6.7.4",
+    "babel-loader": "^6.2.4",
+    "webpack": "^1.12.14"
+  }
+}
