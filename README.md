@@ -1,6 +1,8 @@
 ## random-color-rgb
 
-[![Build Status](https://travis-ci.org/Riokai/random-color-rgb.svg?branch=master)](https://travis-ci.org/Riokai/random-color-rgb)
+[![NPM Version][npm-image]][npm-url]
+[![Linux Build][travis-image]][travis-url]
+[![Windows Build][appveyor-image]][appveyor-url]
 
 Package to generate random RGB colors
 
