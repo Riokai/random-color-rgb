@@ -1,3 +1,4 @@
+module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -46,15 +47,16 @@
 
 	'use strict';
 
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
 	var getRandom = function getRandom() {
 	  var max = arguments.length <= 0 || arguments[0] === undefined ? 999999999999 : arguments[0];
 	  var min = arguments.length <= 1 || arguments[1] === undefined ? 0 : arguments[1];
 
 	  return min + Math.floor(Math.random() * (max - min));
 	};
+
+	// var getRandom = (max = 999999999999, min = 0) => {
+	//   return min + Math.floor(Math.random() * (max - min))
+	// }
 
 	var getColor = function getColor() {
 	  var max = arguments.length <= 0 || arguments[0] === undefined ? 255 : arguments[0];
@@ -63,7 +65,7 @@
 	  return 'rgb(' + getRandom(max, min) + ',' + getRandom(max, min) + ',' + getRandom(max, min) + ')';
 	};
 
-	exports.default = getColor;
+	module.exports = getColor;
 
 /***/ }
 /******/ ]);
