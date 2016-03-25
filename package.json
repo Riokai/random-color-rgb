@@ -1,6 +1,6 @@
 {
   "name": "random-color-rgb",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "generate random RGB colors",
   "main": "build/dist.js",
   "scripts": {
