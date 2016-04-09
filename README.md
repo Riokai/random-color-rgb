@@ -22,7 +22,14 @@ randomColorRGB()
 // return {String} rgb(100,100,100)
 
 // set maximum
-randomColorRGB(100)
+randomColorRGB({max: 100})
 // reurn {String} rgb(90,80,60)
 
+// set minimum
+randomColorRGB({min: 20})
+// reurn {String} rgb(145,118,172)
+
+// set opacity
+randomColorRGB({opacity: 0.5})
+// return {String} rgba(123,182,123,0.5)
 ```
