@@ -54,15 +54,27 @@ module.exports =
 	  return min + Math.floor(Math.random() * (max - min));
 	};
 
-	// var getRandom = (max = 999999999999, min = 0) => {
-	//   return min + Math.floor(Math.random() * (max - min))
-	// }
-
 	var getColor = function getColor() {
-	  var max = arguments.length <= 0 || arguments[0] === undefined ? 255 : arguments[0];
-	  var min = arguments.length <= 1 || arguments[1] === undefined ? 0 : arguments[1];
+	  var _ref = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
 
-	  return 'rgb(' + getRandom(max, min) + ',' + getRandom(max, min) + ',' + getRandom(max, min) + ')';
+	  var _ref$max = _ref.max;
+	  var max = _ref$max === undefined ? 255 : _ref$max;
+	  var _ref$min = _ref.min;
+	  var min = _ref$min === undefined ? 0 : _ref$min;
+	  var opacity = _ref.opacity;
+
+	  var first = getRandom(max, min);
+	  var second = getRandom(max, min);
+	  var third = getRandom(max, min);
+	  var result = '';
+
+	  if (opacity) {
+	    result = 'rgba(' + first + ',' + second + ',' + third + ',' + opacity + ')';
+	  } else {
+	    result = 'rgb(' + first + ',' + second + ',' + third + ')';
+	  }
+
+	  return result;
 	};
 
 	module.exports = getColor;
