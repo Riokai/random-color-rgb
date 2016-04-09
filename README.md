@@ -10,7 +10,7 @@ Package to generate random RGB colors
 npm install random-color-rgb
 ```
 
-## Use
+## Usage
 
 ```js
 var randomColorRGB = require('random-color-rgb')
@@ -32,4 +32,9 @@ randomColorRGB({min: 20})
 // set opacity
 randomColorRGB({opacity: 0.5})
 // return {String} rgba(123,182,123,0.5)
+```
+
+## Develop
+```bash
+npm run dev
 ```
