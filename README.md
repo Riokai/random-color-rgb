@@ -23,11 +23,11 @@ randomColorRGB()
 
 // set maximum
 randomColorRGB({max: 100})
-// reurn {String} rgb(90,80,60)
+// return {String} rgb(90,80,60)
 
 // set minimum
 randomColorRGB({min: 20})
-// reurn {String} rgb(145,118,172)
+// return {String} rgb(145,118,172)
 
 // set opacity
 randomColorRGB({opacity: 0.5})
